@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Number of iteration
+#this could be also obtained from input arguments 
 ITER=10
 #ARR      array with lenght of 10 to prevent a repeated number output
 #counter  loop counter
