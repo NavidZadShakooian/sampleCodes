@@ -1,7 +1,9 @@
 #!/bin/bash
 
+#Number of iteration
 ITER=10
 
+#Function generates numbers from 1 to 10 randomly and without any repeated number
 function do_iter(){
 counter=0
 
