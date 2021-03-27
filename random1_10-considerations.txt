@@ -1,0 +1,23 @@
+###########################################
+###					###
+###	random1-10 documentation	###
+###	         ver 1.0		###
+###	      March 27/2021		###
+###					###
+###########################################
+
+-Usage: 		$./random1_10.sh
+
+-Command Line Args: 	N/A
+
+-Description: 
+	-do_iter() 	user-def function does the task in a while-loop
+	-ITER 		user-def var = 10
+	-RANDOM		linux internal shell variable, generate random positive integer
+	-counter	user-def var, holds the count of successfully generated random numbers 
+	-tmp		user-def var, holds the random number for further operation inside loop
+
+-known limitations:	tested on Bash.
+			
+			
+-Bugs:			N/A		-
