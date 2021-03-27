@@ -34,7 +34,7 @@ do
 		#increment loop counter
 		((counter+=1))
 
-		echo -n  $tmp"  "
+		echo -n  "$tmp  "
         fi
 done
 echo ""
