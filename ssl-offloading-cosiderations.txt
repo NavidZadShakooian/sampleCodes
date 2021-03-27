@@ -8,36 +8,37 @@
 	###########################################
 
 Monitoring NIC,CPU,HDD and RAM in an SSL offloading server, we can start 
-with a little description of the roles of each these hardwares could have
+with a little description of the roles of each these hardware could have
 in such an environment.
  
--NICs		:	with regard to TCP/IP packet size and iput/output 
-			throughput of NICs in this senario, NICs may face 
+-NICs		:	with regard to TCP/IP packet size and input/output 
+			throughput of NICs in this scenario, NICs may face 
 			bottleneck.
 			(2*10Gbs=8.5GB~4.2GBinput+4.2GBoutput)
 
 -HDDs		:       due to the lower speed of HDDs ( in compare to RAM )
 			they only needed to be provisioned enough for the 
-			installed OS, necessary software and virtualmemory(swap)file.
+			installed OS, necessary software and virtual memory 
+			(swap)file.
 
 -CPUs		:	based on encryption methods and number of requests,
-			cpu clock consumption may vary wastly and must be 
-			monitored for furthure planning and provisioning.
+			CPU clock consumption may vary vastly and must be 
+			monitored for further planning and provisioning.
 
 -RAM		:	because the encryption and decryption operations should 
 			take place in RAM, and requests of this type normally need
 			around 10k memory per request to be processed, so it might
-			be required replacing RAM with higher speed and capcity ones.
+			be required replacing RAM with higher speed and capacity ones.
 
 
 How to monitor and what to monitor?
 
-There are lots of monitoring softwares at Enterprise level that can gather detailed 
-information of these hardware. Servers propreitry monitoring softwares can also 
+There are lots of monitoring software at Enterprise level that can gather detailed 
+information of these hardware. Servers proprietary monitoring softwares can also 
 sometimes be handy.
 
 Hardware Utilization percentage, Read/Write speed, Number of Concurrent connections,
-Memory usage, NIC send/recieve bandwidth. Sometimes an increase or decrease in one 
+Memory usage, NIC send/receive bandwidth. Sometimes an increase or decrease in one 
 element in a hardware can be sign of fault or defieciency in other parts for example 
 increasing HDD utilization could be sign of RAM shortage which can lead to slowing down 
 processing of requests (encryption/decryption) , also affects interaction between users 
