@@ -1,13 +1,22 @@
 #!/bin/bash
+#############################################
+#####   Generate Random Number 1-10     #####
+#####   input:		N/A		#####
+#####   output: 	Screen		#####
+#####   version:	1.0		#####
+#####	release date:   March 27,2021   #####
+#############################################
 
-#Number of iteration
-#this could be also obtained from input arguments 
+#Number of iteration (this could be also obtained from input arguments) 
 ITER=10
+
+#variables:
 #ARR      array with lenght of 10 to prevent a repeated number output
 #counter  loop counter
 #do_iter  function
 
-#Function generates numbers from 1 to 10 randomly and without any repeated number
+#Function generates numbers from 1 to 10 randomly and 
+#without any repeated number
 function do_iter(){
 counter=0
 
@@ -28,10 +37,11 @@ do
 		echo -n  $tmp"  "
         fi
 done
+echo ""
 }
 
 
 do_iter
-echo ""
+
 exit 0
 
